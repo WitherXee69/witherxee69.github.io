@@ -1,0 +1,135 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WitherXee</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body class="no-scroll">
+<!-- SPLASH SCREEN -->
+<div class="splash" id="splash">
+  <div id="loader">
+    <div id='title' class='flex'>
+      <p class='loading-text'>LOADING</p>
+      <div class='therefore'>∴</div>
+      <p class="loading-number">%</p>
+    </div>
+
+    <div id='loading-bar-border'>
+      <div class='loading-bar'></div>
+    </div>
+
+    <div id='warning'>
+        <p>
+            <div class='exclamation'>!</div>
+            &nbsp CAUTION, Do not turn off.</p>
+    </div>
+
+    <div id='line-cascates'></div>
+  </div>
+</div>
+
+<video autoplay muted loop id="background-video">
+  <source src="assets/background.mp4" type="video/mp4">
+</video>
+
+<!-- REAL WEBSITE -->
+<div id="main-content" class="hidden">
+
+  <div id="floating-nav">
+  <div class="menu-btn">☰</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  </div>
+
+  <div id="hero-section" class="reveal">
+    <div id="hero">
+      <div class="hero-inner">
+        <h1>WitherXee</h1>
+        <p class="typing neon-paragraph">Building systems. Learning deeply.</p>
+        <button id="work-btn" class="button-normal button-primary">View Work</button>
+        <button id="github-btn" class="button-normal button-github">Check GitHub</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">↓ Scroll ↓</div>
+
+  <div id="about" class="reveal">
+    <section class="about-me-title">
+      <h2 class="typing">#About Me</h2>
+    </section>
+    <section class="about-me-content">
+      <h3 class="neon-paragraph">Hi, I’m Thisitha Sidartha aka WitherXee</h3>
+      <p class="neon-paragraph">I'm a passionate learner exploring the world of software development one project at a time. I love building tools, bots, and even programming languages — not just to code, but to understand how everything works.</p>
+      <p class="neon-paragraph">My journey started with curiosity and turned into creation:<br>
+<br>I built VISE, my first voice-based chatbot
+<br>I created LEO, a Python hacking toolkit
+<br>I’m developing Nyrox, my own Python based interpreted language
+<br>And I'm developing NEXA, A shell that can handle both Linux, Windows and its own unique commands<br>
+<br>When I’m not coding, I’m writing stories, building worlds, or vibing to classic soft rock (70s–90s).</p>
+    </section>
+  </div>
+
+  <div id="projects" class="reveal">
+    <section class="projects-title">
+      <h2 class="typing">#Projects</h2>
+    </section>
+    <section class="projects-content">
+      <div class="project-card">
+        <h3 class="neon-paragraph">NEXA_Shell</h3>
+        <h4>@Python   @CLI    @Shell</h4>
+        <p>NEXA is a cross-platform shell environment designed to provide an easy and flexible command-line experience for developers and users.</p>
+        <button id="git-nexa-btn" class="button-normal button-primary">View on GitHub</button>
+      </div>
+      <div class="project-card">
+        <h3 class="neon-paragraph">LEO</h3>
+        <h4>@Python   @Security</h4>
+        <p>LEO (Lightweight Exploit Operator) is an all-in-one Python hacking toolkit designed for research, testing, and automation purposes.</p>
+        <button id="git-leo-btn" class="button-normal button-primary">View on GitHub</button>
+      </div>
+      <div class="project-card">
+        <h3 class="neon-paragraph">Nyrox</h3>
+        <h4>@Python   @Interpreted</h4>
+        <p>Nyrox is an interpreted programming language written in Python, built from scratch as a personal learning project to understand how languages work behind the scenes — from lexers to parsers and runtime logic.</p>
+        <button id="git-nyrox-btn" class="button-normal button-primary">View on GitHub</button>
+      </div>
+      <div class="project-card">
+        <h3 class="neon-paragraph">VISE</h3>
+        <h4>@Python   @TTS    @GPT</h4>
+        <p>VISE (Voice Interactive Synthetic Entity) is a Python-based text-to-speech chatbot project built with the goal of exploring natural language interaction and synthetic voice responses.</p>
+        <button id="git-vise-btn" class="button-normal button-primary">View on GitHub</button>
+      </div>
+    </section>
+  </div>
+
+  <div id="contact" class="reveal">
+    <section class="contact-title">
+      <h2 class="typing">#Contact</h2>
+    </section>
+    <section class="contact-content">
+      <p class="neon-paragraph">Feel free to reach out to me for collaborations, questions, or just to say hi!</p>
+      <button id="email-btn" class="button-normal button-primary"> ✉ Email Me</button>
+      <button id="git-btn" class="button-normal button-github">GitHub</button>
+      <button id="linkedin-btn" class="button-normal button-primary">LinkedIn</button>
+    </section>
+
+  </div>
+
+<footer id="footer" class="reveal">
+  <div class="footer-bottom">
+    <p>© 2026 WitherXee. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/splash.js"></script>
+<script src="assets/nav.js"></script>
+<script src="assets/scroll.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
