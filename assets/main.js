@@ -53,6 +53,11 @@ vise_project_btn.addEventListener("click", () => {
     window.open("https://github.com/WitherXee69/Project_VISE", "_blank");
 });
 
+const bgVideo = document.getElementById("background-video");
+
+document.addEventListener("touchstart", () => {
+  if (bgVideo.paused) bgVideo.play();
+}, { once: true });
 
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
