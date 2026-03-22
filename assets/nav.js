@@ -1,4 +1,10 @@
+const nav = document.getElementById("floating-nav");
 const menuBtn = document.querySelector("#floating-nav .menu-btn");
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
 document.querySelectorAll('#floating-nav a').forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();

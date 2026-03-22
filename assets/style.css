@@ -665,7 +665,7 @@ body.no-scroll {
 /*=================== Responsive Adjustments =================== */
 @media (max-width: 768px) {
   #hero-section {
-    padding-top: 10vh;
+    padding-top: 28vh;
     align-items: flex-start;
   }
 
@@ -686,7 +686,7 @@ body.no-scroll {
   #floating-nav {
     right: 1rem;
     padding: 0.6rem 1rem;
-    transform: none; /* remove skew on mobile */
+    transform: none;
   }
 
   #floating-nav .nav-links {
@@ -710,7 +710,7 @@ body.no-scroll {
   }
 
   #about .about-me-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   #about .about-me-content {
@@ -719,21 +719,49 @@ body.no-scroll {
 }
 
 @media (max-width: 768px) {
-  .project-info {
-    position: static; /* 👈 move below image */
+  #projects {
+    position: static;
     padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  #projects .projects-title {
+    font-size: 1.6rem;
+  }
+
+  #projects .projects-content {
     text-shadow: none;
   }
 
-  .project-info h2 {
+  #projects .projects-content h2 {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .btn {
-    padding: 0.6rem 1rem;
+  #contact {
+    position: static;
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+  #contact .contact-title {
+    font-size: 1.6rem;
+  }
+  .contact-content {
+    padding: 1rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-primary, .button-github {
+    padding: 0.6rem 1rem;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .button-github {
+    margin: 0rem;
   }
 }
 
@@ -741,10 +769,15 @@ body.no-scroll {
   #projects .projects-content {
     grid-template-columns: 1fr; /* 👈 THIS makes it a list */
     gap: 1.5rem;
-    padding: 0 1rem;
     width: 100%;
     display: flex;
     flex-direction: column; /* 👈 stack */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    font-size: 0.7rem;
   }
 }
 
