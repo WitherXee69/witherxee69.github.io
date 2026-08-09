@@ -472,6 +472,7 @@ body.no-scroll {
 #about {
   justify-self: center;
   max-width: 900px;
+  margin: 10rem auto;
   width: 90%;
 }
 
